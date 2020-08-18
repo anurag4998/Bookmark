@@ -1,0 +1,61 @@
+.contact
+{
+    background-color: hsl(231, 69%, 60%);
+    max-width: 100%;
+    margin-top: 10rem;
+    .contact__container
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .contact__container--subheading
+            {
+                font-size: 1rem;
+                letter-spacing: 0.4rem;
+                padding: 4rem 0 1rem 0;
+                color: floralwhite;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+
+            .contact__container--heading
+            {
+                font-size: 2.5rem;
+                font-weight:500;
+                color: floralwhite;
+                padding: 1.5rem;
+                text-align: center;
+            }
+
+        }
+
+        
+}
+
+.contact__container__input
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 5rem 0;
+    input
+    {
+        margin-right: 2rem;
+        height: 3rem;
+        width: 22rem;
+    }
+
+    button 
+    {
+        height: 3rem;
+        width: 10rem;
+        background-color: hsl(0, 94%, 66%);
+        color: #fff;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        border: transparent;
+        box-shadow: 0 1px 2px #777;
+    }
+}

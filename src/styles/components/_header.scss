@@ -1,0 +1,134 @@
+.header__container
+{
+    max-width: 85%;
+    margin: 3rem auto;
+
+    .header__container__box
+    {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+}
+
+.header__container--text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem 3rem;
+    width: 50%;
+    h1
+    {
+        font-size: 4.5rem;
+        font-weight: 500;
+    }
+
+    p{
+        font-size: 1.7rem;
+        color: #bbb;
+        padding: 2rem 0;
+        margin-bottom: 2rem;
+    }
+
+    .links
+    {
+        .links_1
+            {
+                background-color:  hsl(231, 69%, 60%);
+                color: white;
+            }
+
+    .links_2
+            {
+                background-color: #eee;
+                color: #444;
+                margin-left: 2rem;
+                
+            }
+    }
+    
+    a{
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        border-radius: 0.3rem;
+        font-weight: 500;
+        box-shadow: 0px 2px 3px #ccc;
+        
+    }
+
+}
+
+
+.header__container--image
+{
+    padding-left: 8rem;
+    padding-top: 2rem;
+    z-index: 2;
+    position: relative;
+
+    .header__container__shape
+    {
+        position: absolute;
+        top: 14rem;
+        right: -15rem;
+        background-color: hsl(231, 69%, 60%);
+        width: 60rem;
+        height: 350px;
+        border-top-left-radius: 15rem;
+        border-bottom-left-radius: 15rem;
+        z-index: -1;
+        overflow-x: hidden;
+    }
+    
+}
+
+@media only screen and (max-width:600px)
+{
+   .header__container
+   {
+       max-width: 100%;
+       .header__container__box
+       {
+           flex-direction: column-reverse;
+       }
+   }
+
+   .header__container--text
+   {
+       width: 100%;
+
+       h1
+       {
+           text-align: center;
+           font-size: 3rem;
+       }
+
+       p 
+       {
+           font-size: 1.5rem;
+           text-align: center;
+       }
+       .links
+       {
+           text-align: center;
+       }
+   }
+   .header__container--image
+   {
+       padding: 0;
+       margin: auto;
+        img 
+        {
+            width: 100%;
+        }
+
+        .header__container__shape
+        {
+            display: none;
+        }
+   }
+}
+
