@@ -1,6 +1,7 @@
 .faq
 {
-    max-width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
 
     .faq__container
     {
@@ -87,7 +88,7 @@
 }
 
 
-@media only screen and (max-width:600px)
+@media only screen and (max-width:850px)
 {
     .faq__container__questions
     {

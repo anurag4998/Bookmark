@@ -31,6 +31,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .navbar .navbar_container .navbar--left {
@@ -69,9 +71,53 @@ body {
           box-shadow: 0px 2px 4px #333;
 }
 
-@media only screen and (max-width: 600px) {
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
   .navbar {
+    margin-top: 2rem;
+  }
+  .hamburger {
+    display: inline-block;
+  }
+  .navbar--right__links {
     display: none;
+  }
+  .navbar--right__links--display {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    top: 8rem;
+    left: 5%;
+    right: 5%;
+    background-color: white;
+    z-index: 5;
+    text-align: center;
+    height: 40vh;
+    -webkit-box-shadow: 0 10px 50px #666;
+            box-shadow: 0 10px 50px #666;
+  }
+  .navbar--right__links--display li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 3rem 0;
+  }
+  .navbar--right__links--display li a {
+    background-color: #fa5757;
+    color: floralwhite;
+    text-decoration: none;
+    padding: 0.7rem 2rem;
+    border-radius: 0.3rem;
+    -webkit-box-shadow: 0px 2px 4px #333;
+            box-shadow: 0px 2px 4px #333;
+    margin-bottom: 3rem;
   }
 }
 
@@ -172,6 +218,7 @@ body {
   }
   .header__container--text {
     width: 100%;
+    margin-top: 5rem;
   }
   .header__container--text h1 {
     text-align: center;
@@ -192,7 +239,12 @@ body {
     width: 100%;
   }
   .header__container--image .header__container__shape {
-    display: none;
+    top: 8rem;
+    right: 0rem;
+    width: 20rem;
+    height: 20rem;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 10rem;
   }
 }
 
@@ -348,7 +400,8 @@ body {
 }
 
 .faq {
-  max-width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .faq .faq__container {
@@ -518,6 +571,13 @@ body {
   margin-right: 2rem;
   height: 3rem;
   width: 22rem;
+  padding: 0.5rem;
+  color: #777;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  border-radius: 0.3rem;
+  border: transparent;
 }
 
 .contact__container__input button {
@@ -530,6 +590,29 @@ body {
   border: transparent;
   -webkit-box-shadow: 0 1px 2px #777;
           box-shadow: 0 1px 2px #777;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact .contact__container .contact__container--subheading {
+    font-size: 1.3rem;
+  }
+  .contact .contact__container .contact__container--heading {
+    padding-top: 0.7rem;
+  }
+  .contact__container__input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .contact__container__input input {
+    margin-right: 0;
+  }
+  .contact__container__input button {
+    margin-top: 2rem;
+    width: 22rem;
+  }
 }
 
 .footer {

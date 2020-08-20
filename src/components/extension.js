@@ -8,7 +8,7 @@ const Extension = () => {
     return (
         <div className='extension'>
 
-            <div className='extension__container'>
+            <div className='extension__container' id='extensions'>
                 <div className='extension__container__heading'>
                     <div className='extension__container__heading-main'>
                         Download the extension
