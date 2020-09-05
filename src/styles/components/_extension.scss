@@ -107,6 +107,20 @@
     }
 }
 
+@media only screen and (max-width:1300px) and (min-width:1150px)
+{
+    .extension__container__card
+    {
+        .extension__item
+        {
+            .border
+            {
+                width: 100%;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width:900px)
 
 {
